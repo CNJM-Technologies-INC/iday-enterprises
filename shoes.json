@@ -1,0 +1,64 @@
+{
+    "shoes": [
+        {
+            "id": "S001",
+            "name": "Stylish Running Shoes",
+            "description": "Comfortable running shoes for all-day wear.",
+            "image": "images/S001.jpg"
+        },
+        {
+            "id": "S002",
+            "name": "Classic Sneakers",
+            "description": "Timeless sneakers that never go out of style.",
+            "image": "images/S002.jpg"
+        },
+        {
+            "id": "S003",
+            "name": "Elegant High Heels",
+            "description": "Perfect for formal occasions.",
+            "image": "images/S003.jpg"
+        },
+        {
+            "id": "S004",
+            "name": "Casual Flip Flops",
+            "description": "Comfortable and stylish flip flops for everyday wear.",
+            "image": "images/S004.jpg"
+        },
+        {
+            "id": "S005",
+            "name": "Classic Loafers",
+            "description": "Stylish loafers for a casual yet elegant look.",
+            "image": "images/S00 (5).jpg"
+        },
+        {
+            "id": "S006",
+            "name": "Sporty Sandals",
+            "description": "Durable sandals for outdoor activities.",
+            "image": "images/S00 (6).jpg"
+        },
+        {
+            "id": "S007",
+            "name": "Trendy Boots",
+            "description": "Stylish boots for a fashionable look.",
+            "image": "images/S00 (7).jpg"
+        },
+        {
+            "id": "S008",
+            "name": "Comfortable Slippers",
+            "description": "Soft and cozy slippers for indoor wear.",
+            "image": "images/S00 (8).jpg"
+        },
+        {
+            "id": "S009",
+            "name": "Chic Flats",
+            "description": "Elegant flats for a sophisticated look.",
+            "image": "images/S00 (9).jpg"
+        },
+        {
+            "id": "S010",
+            "name": "Stylish Oxfords",
+            "description": "Classic oxfords for a timeless look.",
+            "image": "images/S00 (10).jpg"
+        }
+    ]
+}

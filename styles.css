@@ -1,0 +1,178 @@
+:root {
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-secondary: #f97316;
+    --color-secondary-light: #fb923c;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(249, 115, 22, 0.1));
+}
+
+.nav-link {
+    @apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+}
+
+.card {
+    @apply bg-gray-800 rounded-xl shadow-xl overflow-hidden transition-all duration-300;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.button-primary {
+    @apply bg-gradient-to-r from-blue-600 to-orange-500 text-white font-semibold py-3 px-8 rounded-full 
+    transition-all duration-300 hover:from-blue-700 hover:to-orange-600 hover:shadow-lg 
+    transform hover:-translate-y-1;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Back to Top Button */
+#backToTop {
+    display: none; /* Hidden by default */
+}
+
+#backToTop.visible {
+    display: block; /* Show when scrolling down */
+}
+/* Mobile First Responsive Styles */
+
+/* Small devices (phones) */
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* Mobile menu animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+#mobile-menu .bg-gray-900 {
+    animation: slideIn 0.3s ease-out;
+}
+
+#mobile-menu-backdrop {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .card:hover {
+        transform: none;
+    }
+
+    .button-primary:hover,
+    .button-secondary:hover {
+        transform: none;
+    }
+}

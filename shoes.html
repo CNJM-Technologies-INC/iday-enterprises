@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iDay Enterprises - Shoe Store">
+    <title>iDay Shoes</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <img src="images/logo.png" alt="iDay Enterprises" class="h-10">
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="Shoes.html" class="nav-link">Shoes</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="md:hidden" id="mobile-menu" class="hidden">
+        <div class="flex flex-col items-center space-y-4 py-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Shoes.html" class="nav-link">Shoes</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Shoes Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-display font-bold text-center mb-12 gradient-text">Our Shoes</h2>
+            <div id="shoes-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Shoes will be dynamically injected here -->
+            </div>
+            <div class="flex justify-center mt-8">
+                <button id="prev-btn" class="bg-blue-600 text-white px-4 py-2 rounded-md mr-2">Previous</button>
+                <button id="next-btn" class="bg-blue-600 text-white px-4 py-2 rounded-md">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Contact Section -->
+    <section id="contact" class="py-24 gradient-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-display font-bold text-center mb-12 gradient-text">Contact Our CEO</h2>
+            <p class="text-lg text-gray-300 text-center mb-4">If you are interested in any specific shoes, please mention the shoe identifier when contacting.</p>
+            <p class="text-lg text-gray-300 text-center mb-4">Contact: <strong>James Mwangi Kibiru</strong></p>
+            <p class="text-lg text-gray-300 text-center mb-4">Phone: <strong>+254 110524673</strong></p>
+            <p class="text-lg text-gray-300 text-center">Email: <strong>info@idayenterprises.com</strong></p>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 mt-12 pt-8>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 ml-4">&copy; 2025 iDay Enterprises. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
